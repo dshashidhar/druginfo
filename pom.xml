@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.deloitte.java</groupId>
   <artifactId>druginfo</artifactId>
- 
+ <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>druginfo Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -128,6 +128,11 @@
 	
 				<version>${jetty.version}</version>
 			</plugin>
+			<plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>0.5.7</version>
+      </plugin>
 </plugins>
     <finalName>druginfo</finalName>
   </build>
